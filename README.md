@@ -11,7 +11,7 @@ Zbieranie informacji takich jak:
 - Trasa przepływu sygnału pomiędzy hostami (adresów sieciowych prowadzących do adresu docelowego)
 - Sprawdzanie portów dla standardowych usług internetowych (Otwarty/Zamknięty)
 - Przyblibiżona lokalizacja docelowego adresu internetowego
-- Dodatkowe informacje, które mogą być trakotwane jakikolwiek jako przydatne 
+- Dodatkowe informacje, które mogą być trakotwane jakkolwiek jako przydatne 
 # 3. Technologia 
 - W głównej mierze wykorzystanie Pythona w połączeniu z bibliotekami(PyQt5,IplookUp, etc.).
 - Ewentualnie inne technologie, mogące przyspieszyć tworzenie projektu. (?)
