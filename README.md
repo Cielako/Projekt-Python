@@ -1,5 +1,5 @@
 # PWJS - O programie  IPSI (Internet Protocol Simple Information)
-* Oznacza dodatkowe funkcje, które na ten czas są w planach, lecz mogą ulec zmianie
+? Oznacza dodatkowe funkcje, które na ten czas są w planach, lecz mogą ulec zmianie
 # 1. Pomysł 
 - Stworzenie aplikacji mającej za zadanie zbieranie informacji o poszczególnym adresie strony internetowej.
 - Wdrożenie do aplikacji systemu logowania na pocztę(prawdopodobnie gmail) i przesyłanie danych pobranych z witryny na wybrany adres e-mail *
