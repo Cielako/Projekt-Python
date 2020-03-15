@@ -13,7 +13,7 @@ Zbieranie informacji takich jak:
 - Przyblibiżona lokalizacja docelowego adresu internetowego
 - Dodatkowe informacje, które mogą być trakotwane jakkolwiek jako przydatne 
 # 3. Technologia 
-- W głównej mierze wykorzystanie Pythona w połączeniu z bibliotekami(PyQt5,IplookUp, etc.).
+- W głównej mierze wykorzystanie Pythona w połączeniu z bibliotekami(PyQt5/Tkinter,IplookUp, etc.).
 - Ewentualnie inne technologie, mogące przyspieszyć tworzenie projektu. (?)
 # 4. Lista Zadań
 - [x] Nazwa aplikacji
