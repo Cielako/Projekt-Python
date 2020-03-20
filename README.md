@@ -19,7 +19,7 @@ Zbieranie informacji takich jak:
 - [x] Nazwa aplikacji
 - [x] Główne założenie działania aplikacji
 - [ ] Tester pingu
-- [?] info o systemie operacyjnym witryny
+- [ ] info o systemie operacyjnym witryny
 - [x] Trasa adresów pomiędzy hostem a witryną
 - [x] Tester portów
 - [ ] Przybliżona lokalizacja adresu witryny
