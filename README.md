@@ -20,9 +20,12 @@ Zbieranie informacji takich jak:
 - [x] Główne założenie działania aplikacji
 - [x] Trasa adresów pomiędzy hostem a witryną (moduł)
 - [x] Tester portów (moduł)
+- [ ] Czas jaki upłynął do połączenia się z witryną
 - [ ] Tester pingu (moduł)
 - [ ] info o systemie operacyjnym witryny (moduł)
 - [ ] Przybliżona lokalizacja adresu witryny (moduł)
+- [ ] Generowanie raportu (z informacjami na temat konkretnej witryny)
+- [ ] Możliwość zapisu raportu do pliku tekstowego
 - [ ] Pomysł na wygląd interfejsu graficznego
 - [ ] Implementacja systemu graficznego w aplikacji
 
