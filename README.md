@@ -18,11 +18,13 @@ Zbieranie informacji takich jak:
 # 4. Lista Zadań
 - [x] Nazwa aplikacji
 - [x] Główne założenie działania aplikacji
-- [ ] Tester pingu
-- [ ] info o systemie operacyjnym witryny
-- [x] Trasa adresów pomiędzy hostem a witryną
-- [x] Tester portów
-- [ ] Przybliżona lokalizacja adresu witryny
+- [x] Trasa adresów pomiędzy hostem a witryną (moduł)
+- [x] Tester portów (moduł)
+- [ ] Tester pingu (moduł)
+- [ ] info o systemie operacyjnym witryny (moduł)
+- [ ] Przybliżona lokalizacja adresu witryny (moduł)
+- [ ] Pomysł na wygląd interfejsu graficznego
+- [ ] Implementacja systemu graficznego w aplikacji
 
 
 
