@@ -18,10 +18,11 @@ Zbieranie informacji takich jak:
 # 4. Lista Zadań
 - [x] Nazwa aplikacji
 - [x] Główne założenie działania aplikacji
-- [ ] Tester osiąglaności witryny
+- [x] Tester osiąglaności witryny
 - [x] Trasa adresów pomiędzy hostem a witryną (moduł)
 - [x] Tester portów (moduł)
-- [ ] Czas jaki upłynął do połączenia się z witryną
+- [x] Czas jaki upłynął do połączenia się z witryną
+- [x] Testowy moduł mailowy (?)
 - [ ] Tester pingu (moduł)
 - [ ] info o systemie operacyjnym witryny (moduł)
 - [ ] Przybliżona lokalizacja adresu witryny (moduł)
