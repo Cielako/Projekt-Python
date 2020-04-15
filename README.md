@@ -15,8 +15,8 @@ Zbieranie informacji takich jak:
 - Dodatkowe, które mogą być trakotwane jakkolwiek jako przydatne 
 # 3. Technologia 
 - W głównej mierze wykorzystanie Pythona w połączeniu z bibliotekami:
-  - #iplookup (ver. 1.0.5) [click](https://pypi.org/project/iplookup/ "click") 
-  - #ipstack  (ver. 0.1.4) [click](https://pypi.org/project/ipstack/ "click")
+  - #iplookup (ver. 1.0.5) [click](https://pypi.org/project/iplookup/) 
+  - #ipstack  (ver. 0.1.4) [click](https://pypi.org/project/ipstack/)
   - PyQt5 / Tkinter
 - Ewentualnie inne technologie, mogące przyspieszyć tworzenie projektu. (?)
 # 4. Lista Zadań
