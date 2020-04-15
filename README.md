@@ -1,5 +1,6 @@
 # PWJS - O programie  IPSI (Internet Protocol Simple Information)
-(?) Oznacza dodatkowe założenia, które na ten czas są w planach, lecz mogą ulec zmianie
+(?) - Oznacza dodatkowe założenia, które na ten czas są w planach, lecz mogą ulec zmianie
+(Test) - Moduł niedokończony
 # 1. Pomysł 
 - Stworzenie aplikacji mającej za zadanie zbieranie informacji o poszczególnym adresie strony internetowej.
 - Wdrożenie do aplikacji systemu logowania na pocztę(prawdopodobnie gmail) i przesyłanie danych pobranych z witryny na wybrany adres e-mail (?)
@@ -11,25 +12,31 @@ Zbieranie informacji takich jak:
 - Trasa przepływu sygnału pomiędzy hostem a witryną (adresów sieciowych prowadzących do adresu docelowego)
 - Sprawdzanie portów dla standardowych usług internetowych (Otwarty/Zamknięty)
 - Przyblibiżona lokalizacja docelowego adresu internetowego
-- Dodatkowe informacje, które mogą być trakotwane jakkolwiek jako przydatne 
+- Dodatkowe, które mogą być trakotwane jakkolwiek jako przydatne 
 # 3. Technologia 
-- W głównej mierze wykorzystanie Pythona w połączeniu z bibliotekami(PyQt5 / Tkinter,IplookUp, etc.).
+- W głównej mierze wykorzystanie Pythona w połączeniu z bibliotekami:
+  - iplookup (ver. 1.0.5)
+  - ipstack  (ver. 0.1.4)
+  - PyQt5 / Tkinter
 - Ewentualnie inne technologie, mogące przyspieszyć tworzenie projektu. (?)
 # 4. Lista Zadań
+  ### Moduły:
+- [x] Tester osiąglaności witryny + Czas trwania łączenia się z witryną
+- [x] Trasa adresów pomiędzy hostem a witryną 
+- [x] Tester portów
+- [ ] Site info mailer (Test) (?)
+- [ ] Tester pingu 
+- [ ] Geolokalizacja adresu witryny (Test) 
+- [ ] Generowanie raportu o witrynie + dodatkowe opcje (np. zapis lub wysłanie raportu)
+  
+  ### Główne:
 - [x] Nazwa aplikacji
-- [x] Główne założenie działania aplikacji
-- [x] Tester osiąglaności witryny
-- [x] Trasa adresów pomiędzy hostem a witryną (moduł)
-- [x] Tester portów (moduł)
-- [x] Czas jaki upłynął do połączenia się z witryną
-- [x] Testowy moduł mailowy (?)
-- [ ] Tester pingu (moduł)
-- [ ] info o systemie operacyjnym witryny (moduł)
-- [ ] Przybliżona lokalizacja adresu witryny (moduł)
-- [ ] Generowanie raportu (z informacjami na temat konkretnej witryny)
-- [ ] Możliwość zapisu raportu do pliku tekstowego
+- [x] Założenia działania aplikacji
+- [ ] Utworzenie wszystkich modułów aplikacji
 - [ ] Pomysł na wygląd interfejsu graficznego
-- [ ] Implementacja systemu graficznego w aplikacji
+- [ ] Implementacja interfejsu graficznego w aplikacji
+  
+  ### Poboczne:
 
 
 
