@@ -20,7 +20,7 @@ Zbieranie informacji takich jak:
   - PyQt5 / Tkinter
 - Ewentualnie inne technologie, mogące przyspieszyć tworzenie projektu. (?)
 # 4. Lista Zadań
-   ### Moduły:
+  ### Moduły:
 - [x] Tester osiąglaności witryny + Czas trwania łączenia się z witryną
 - [x] Trasa adresów pomiędzy hostem a witryną 
 - [x] Tester portów
