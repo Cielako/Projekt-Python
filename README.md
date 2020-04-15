@@ -38,7 +38,7 @@ Zbieranie informacji takich jak:
   
   ### Poboczne:
 - [ ] Lokalizacja i korekta błędów w aplikacji
-- [ ] Korekta GUI
+- [ ] Poprawa GUI (?)
 
   ### Raporty:
  - [x] Propozycja projektu (13.03.20)
