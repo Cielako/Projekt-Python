@@ -15,7 +15,7 @@ Zbieranie informacji takich jak:
 - Dodatkowe, które mogą być trakotwane jakkolwiek jako przydatne 
 # 3. Technologia 
 - W głównej mierze wykorzystanie Pythona w połączeniu z bibliotekami:
-  - iplookup (ver. 1.0.5)
+  - #iplookup (ver. 1.0.5) (https://github.com/pandao/editor.md "Heading link")
   - ipstack  (ver. 0.1.4)
   - PyQt5 / Tkinter
 - Ewentualnie inne technologie, mogące przyspieszyć tworzenie projektu. (?)
