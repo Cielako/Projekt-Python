@@ -2,18 +2,18 @@
 # Głównie zależało mi na szybkości (Skaner którego chciałem użyć wcześniej był strasznie wolny)
 
 import threading
-import socket #interfejs sieciowy niskiego poziomu
+import socket # interfejs sieciowy niskiego poziomu
 
 def portscanner(target):
     def portscan(port):    
-        s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)#(Adresacja IPV4 , Przesyłanie danych strumieniowo )
+        s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)#(Adresacja IPV4 , Przesyłanie danych strumieniowo)
         s.settimeout(0.5)# Ustwiamy standardowe opóźnienie
          
-        try: #sprawdzenie czy port jest otwarty
+        try: # sprawdzenie czy port jest otwarty
             con = s.connect((target,port))#połączenie na porcie
             print(f'Port : {port} Otwarty.')
             con.close()#zakończenie połączenia
-        except:#jeśli port jest zamknięty wykonuj dalej
+        except:# jeśli port jest zamknięty wykonuj dalej
             pass
 
         

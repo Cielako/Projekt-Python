@@ -1,3 +1,3 @@
-from Modules.portscanner import portscanner
+from Modules.iplook import iplook
 
-portscanner("localhost")#test skanera portów
+print(iplook("allegro.pl"))# test skanera portów

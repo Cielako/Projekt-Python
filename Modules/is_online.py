@@ -14,5 +14,5 @@ def is_online(target):
         return('Serwer nie mógł zrealizować żądania :( \n\n Kod błędu: ' + str(exception.code))
     else:
         end = time.time() - start
-        return ('Strona '+ str(target) +' działa poprawnie, połączenie nastąpiło po: ' + str(round(end,2)) + ' s')
+        return ('Strona '+ str(target) +' działa poprawnie, połączenie w czasie: ' + str(round(end,2)) + ' s')
 
