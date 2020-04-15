@@ -1,5 +1,5 @@
 # PWJS - O programie  IPSI (Internet Protocol Simple Information)
-(?) - Oznacza dodatkowe założenia, które na ten czas są w planach, lecz mogą ulec zmianie
+(?) - Oznacza dodatkowe założenia, które na ten czas są w planach, lecz mogą ulec zmianie <br>
 (Test) - Moduł niedokończony
 # 1. Pomysł 
 - Stworzenie aplikacji mającej za zadanie zbieranie informacji o poszczególnym adresie strony internetowej.
