@@ -33,12 +33,20 @@ Zbieranie informacji takich jak:
 - [x] Nazwa aplikacji
 - [x] Założenia działania aplikacji
 - [ ] Utworzenie wszystkich modułów aplikacji
-- [ ] Pomysł na wygląd interfejsu graficznego
-- [ ] Implementacja interfejsu graficznego w aplikacji
+- [ ] Pomysł na wygląd GUI
+- [ ] Implementacja GUI w aplikacji
   
   ### Poboczne:
+- [ ] Lokalizacja i korekta błędów w aplikacji
+- [ ] Korekta GUI
 
-
+  ### Raporty:
+ - [x] Propozycja projektu (13.03.20)
+ - [x] Raport I (03.04.20)
+ - [ ] Raport II (24.04.20)
+ - [ ] Raport III (15.05.20)
+ - [ ] Raport IV/Prototyp (29.05.20)
+ - [ ] Prezentacje/oddanie projektu (19.06.20)
 
 
 
