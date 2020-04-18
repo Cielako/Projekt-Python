@@ -24,9 +24,9 @@ Zbieranie informacji takich jak:
 - [x] Tester osiąglaności witryny + Czas trwania łączenia się z witryną
 - [x] Trasa adresów pomiędzy hostem a witryną 
 - [x] Tester portów
-- [ ] Site info mailer (Test) (?)
+- [x] Site info mailer (Test) (?)
 - [ ] Tester pingu 
-- [ ] Geolokalizacja adresu witryny (Test) 
+- [x] Geolokalizacja adresu witryny (Test) 
 - [ ] Generowanie raportu o witrynie + dodatkowe opcje (np. zapis lub wysłanie raportu)
   
   ### Główne:
