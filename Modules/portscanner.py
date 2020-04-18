@@ -15,8 +15,7 @@ def portscanner(target):
             con.close()#zakończenie połączenia
         except:# jeśli port jest zamknięty wykonuj dalej
             pass
-
-        
+ 
     port_number = 1
     for p in range(1,1024):
         t = threading.Thread(target = portscan, kwargs = {"port" : port_number})
