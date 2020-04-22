@@ -1,0 +1,1 @@
+pyuic5 -x nazwa_pliku.ui -o nazwa_pliku.py
