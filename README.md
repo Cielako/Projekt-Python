@@ -18,6 +18,7 @@ Zbieranie informacji takich jak:
   - iplookup (ver. 1.0.5) [click](https://pypi.org/project/iplookup/) 
   - ipstack  (ver. 0.1.4) [click](https://pypi.org/project/ipstack/)
   - PyQt5    (ver. 5.13.0)[click](https://pypi.org/project/PyQt5/)
+  - whois    (ver. 0.7.2) [click](https://pypi.org/project/python-whois/0.7.2/)
 - Ewentualnie inne technologie, mogące przyspieszyć tworzenie projektu. (?)
 # 4. Lista Zadań
   ### Moduły:
@@ -27,6 +28,7 @@ Zbieranie informacji takich jak:
 - [x] Site info mailer (Test) (?)
 - [ ] Tester pingu 
 - [x] Geolokalizacja adresu witryny (Test) 
+- [x] Whois (informacje teleadresowe o domenie) (Test)
 - [ ] Generowanie raportu o witrynie + dodatkowe opcje (np. zapis lub wysłanie raportu)
   
   ### Główne:
