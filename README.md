@@ -3,7 +3,7 @@
 (Test) - Moduł niedokończony
 # 1. Pomysł 
 - Stworzenie aplikacji mającej za zadanie zbieranie informacji o poszczególnym adresie strony internetowej.
-- Wdrożenie do aplikacji systemu logowania na pocztę(prawdopodobnie gmail) i przesyłanie danych pobranych z witryny na wybrany adres e-mail (?)
+- Wdrożenie do aplikacji modułu wysyłającego raport na podany adres e-mail(?)
 - Zaprojektowanie intuicyjnego gui dla potencjalnego użytkownika. 
 - Ewentualne rozbudowanie programu o dodatkowe funkcje, w miarę rozwoju projektu 
 # 2. Plan działania aplikacji
@@ -17,7 +17,7 @@ Zbieranie informacji takich jak:
 - W głównej mierze wykorzystanie Pythona w połączeniu z bibliotekami:
   - iplookup (ver. 1.0.5) [click](https://pypi.org/project/iplookup/) 
   - ipstack  (ver. 0.1.4) [click](https://pypi.org/project/ipstack/)
-  - PyQt5 / Tkinter
+  - PyQt5    (ver. 5.13.0)[click](https://pypi.org/project/PyQt5/)
 - Ewentualnie inne technologie, mogące przyspieszyć tworzenie projektu. (?)
 # 4. Lista Zadań
   ### Moduły:
@@ -31,9 +31,9 @@ Zbieranie informacji takich jak:
   
   ### Główne:
 - [x] Nazwa aplikacji
-- [x] Założenia działania aplikacji
+- [x] Założenia dotyczące działania aplikacji
 - [ ] Utworzenie wszystkich modułów aplikacji
-- [ ] Pomysł na wygląd GUI
+- [x] Pomysł na wygląd GUI
 - [ ] Implementacja GUI w aplikacji
   
   ### Poboczne:
