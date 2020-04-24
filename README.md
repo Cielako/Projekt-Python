@@ -45,7 +45,7 @@ Zbieranie informacji takich jak:
   ### Raporty:
  - [x] Propozycja projektu (13.03.20)
  - [x] Raport I (03.04.20)
- - [ ] Raport II (24.04.20)
+ - [x] Raport II (24.04.20)
  - [ ] Raport III (15.05.20)
  - [ ] Raport IV/Prototyp (29.05.20)
  - [ ] Prezentacje/oddanie projektu (19.06.20)
