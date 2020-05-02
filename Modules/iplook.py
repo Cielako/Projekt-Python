@@ -4,5 +4,6 @@ def iplook(adres):
     ip = iplookup.iplookup
     return ip(adres)
  
-for r in range(len(iplook("yahoo.com"))):
-    print(f"{r+1}: " + iplook("yahoo.com")[r])
+# Przykładowy test modułu 
+# for r in range(len(iplook("yahoo.com"))):
+    # print(f"{r+1}: " + iplook("yahoo.com")[r])

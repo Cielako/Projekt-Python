@@ -6,10 +6,14 @@ def geolocation(target):
         if location is None:
             return "Nie udało się znaleźć lokalizacji" # jesli nie uda się znaleźć lokalizacji  
         else:
-            info = {"kod kontynentu":"","nazwa kontynentu":"","kod kraju":"","nazwa kraju":"","kod regionu":"","nazwa regionu":"","miasto":"","kod pocztowy":"","szerokość geograficzna":"","długość geograficzna":""}
+            geo_info = {"kod kontynentu":"","nazwa kontynentu":"","kod kraju":"","nazwa kraju":"","kod regionu":"","nazwa regionu":"","miasto":"","kod pocztowy":"","szerokość geograficzna":"","długość geograficzna":""}
             del location['location'],location['ip'],location['type']
-            for key,value in zip(info.keys(),location.values()):
-               info[key] = value
-            return(info)
+            for key,value in zip(geo_info.keys(),location.values()):
+               geo_info[key] = value
+            return(geo_info)
     except Exception as e:
         print(e)
+        
+# Przykładowy test
+# for x,y in zip(geolocation("wp.pl").keys(),geolocation("wp.pl").values()):
+    # print(f"{x} : {y}")
