@@ -1,5 +1,5 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
-from Menu.info import Ui_Info
+from Gui.info import Ui_Info
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -44,11 +44,11 @@ class Ui_MainWindow(object):
         
         self.actionInformacje = QtWidgets.QAction(MainWindow)
         self.actionInformacje.setObjectName("actionInformacje")
+        self.menuProgram.addAction(self.actionInformacje)
+        self.actionInformacje.triggered['bool'].connect(self.display) 
         
         self.actionZamknij = QtWidgets.QAction(MainWindow)
         self.actionZamknij.setObjectName("actionZamknij")
-        
-        self.menuProgram.addAction(self.actionInformacje)
         self.menuProgram.addAction(self.actionZamknij)
         self.actionZamknij.triggered['bool'].connect(MainWindow.close)
         
@@ -58,6 +58,15 @@ class Ui_MainWindow(object):
        
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
         
+    def display(self):
+        Info = QtWidgets.QDialog()
+        MainWindow.hide()
+        ui = Ui_Info()
+        ui.setupUi(Info)
+        Info.show()
+        Info.exec_()
+        MainWindow.show()
+          
     def run(self):
         inputValue = self.inputAddress.text() # pobieranie wartości z input address
         self.labelAddress.setText(inputValue)
@@ -71,7 +80,6 @@ class Ui_MainWindow(object):
         self.generateButton.setEnabled(True)
         self.progressBar.hide()
         
-        
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
@@ -82,6 +90,7 @@ class Ui_MainWindow(object):
         self.menuProgram.setTitle(_translate("MainWindow", "Program"))
         self.actionInformacje.setText(_translate("MainWindow", "Informacje"))
         self.actionZamknij.setText(_translate("MainWindow", "Zamknij"))
+        
 
 
 if __name__ == "__main__":

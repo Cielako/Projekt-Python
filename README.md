@@ -36,6 +36,7 @@ Zbieranie informacji takich jak:
 - [x] Założenia dotyczące działania aplikacji
 - [ ] Utworzenie wszystkich modułów aplikacji
 - [x] Pomysł na wygląd GUI
+- [x] Utworzenie Szablonu GUI
 - [ ] Implementacja GUI w aplikacji
   
   ### Poboczne:
