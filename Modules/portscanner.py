@@ -22,13 +22,13 @@ def portscanner(target):
         port_number += 1
         t.start() # rozpoczyna działanie wątku
         
-    if len(open_ports) == 0: # Jeśli żaden port nie jest otwarty zwróć komunikat
-        return "Brak otwartych portów :("
-    else:
-        return open_ports
+    #if len(open_ports) == 0: # Jeśli żaden port nie jest otwarty zwróć komunikat
+        #return "Brak otwartych portów :("
+    #else:
+    return open_ports
     
-    # Przykładowy test skanera portów
-    # a = portscanner("wp.pl")
-    # print(a)
+# Przykładowy test skanera portów
+#a = portscanner("wp.pl")
+#print(a)
 
     
