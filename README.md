@@ -19,17 +19,18 @@ Zbieranie informacji takich jak:
   - ipstack  (ver. 0.1.4) [click](https://pypi.org/project/ipstack/)
   - PyQt5    (ver. 5.13.0)[click](https://pypi.org/project/PyQt5/)
   - whois    (ver. 0.7.2) [click](https://pypi.org/project/python-whois/0.7.2/)
+  - fpdf     (ver. 1.7.2) [click](https://pypi.org/project/fpdf/) 
 - Ewentualnie inne technologie, mogące przyspieszyć tworzenie projektu. (?)
 # 4. Lista Zadań
   ### Moduły:
 - [x] Tester osiąglaności witryny + Czas trwania łączenia się z witryną
 - [x] Trasa adresów pomiędzy hostem a witryną 
 - [x] Tester portów
-- [x] Site info mailer (Test) (?)
-- [ ] Tester pingu 
-- [x] Geolokalizacja adresu witryny (Test) 
+- [x] Site info mailer (Test) (?) 
+- [x] Geolokalizacja adresu witryny
 - [x] Whois (informacje teleadresowe o domenie) (Test)
-- [ ] Generowanie raportu o witrynie + dodatkowe opcje (np. zapis lub wysłanie raportu)
+- [x] Generowanie raportu o witrynie(za pomocą biblioteki fpdf, plik tymczasowy)(Test) 
+- [ ] Dodatkowe opcje(podgląd raportu z poziomu aplikacji (?) + zapis)
   
   ### Główne:
 - [x] Nazwa aplikacji
@@ -37,11 +38,12 @@ Zbieranie informacji takich jak:
 - [ ] Utworzenie wszystkich modułów aplikacji
 - [x] Pomysł na wygląd GUI
 - [x] Utworzenie Szablonu GUI
-- [ ] Implementacja GUI w aplikacji
+- [x] Implementacja GUI w aplikacji (Częściowo działający)(Test)
+- [ ] Utworzenie kompletnego GUI
   
   ### Poboczne:
 - [ ] Lokalizacja i korekta błędów w aplikacji
-- [ ] Poprawa GUI (?)
+- [ ] Poprawa GUI 
 
   ### Raporty:
  - [x] Propozycja projektu (13.03.20)
