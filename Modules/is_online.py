@@ -15,5 +15,6 @@ def is_online(target):
     else:
         end = time.time() - start
         return ('Strona '+ str(target) +' działa poprawnie, połączono w : ' + str(round(end,2)) + ' s')
+    
 # Przykładowy test skanera portów
 # print(is_online("www.facebook.com"))

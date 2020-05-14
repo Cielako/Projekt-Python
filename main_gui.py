@@ -1,5 +1,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from Gui.info import Ui_Info
+from pdfcreate import pdfcreate
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -45,7 +46,7 @@ class Ui_MainWindow(object):
         self.actionInformacje = QtWidgets.QAction(MainWindow)
         self.actionInformacje.setObjectName("actionInformacje")
         self.menuProgram.addAction(self.actionInformacje)
-        self.actionInformacje.triggered['bool'].connect(self.display) 
+        self.actionInformacje.triggered['bool'].connect(self.displayAbout) 
         
         self.actionZamknij = QtWidgets.QAction(MainWindow)
         self.actionZamknij.setObjectName("actionZamknij")
@@ -58,7 +59,7 @@ class Ui_MainWindow(object):
        
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
         
-    def display(self):
+    def displayAbout(self):# Informacje o programie
         Info = QtWidgets.QDialog()
         MainWindow.hide()
         ui = Ui_Info()
@@ -67,9 +68,9 @@ class Ui_MainWindow(object):
         Info.exec_()
         MainWindow.show()
           
-    def run(self):
+    def run(self):# Uruchom główne funkcje programu
         inputValue = self.inputAddress.text() # pobieranie wartości z input address
-        self.labelAddress.setText(inputValue)
+        #self.labelAddress.setText(inputValue)
         self.completed = 0
         self.progressBar.show()
         
@@ -78,11 +79,12 @@ class Ui_MainWindow(object):
             self.completed += 0.00001
             self.progressBar.setValue(self.completed)
         self.generateButton.setEnabled(True)
-        self.progressBar.hide()
+        self.progressBar.close()
+        pdfcreate(inputValue)
         
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "IPSI"))
         self.generateButton.setStatusTip(_translate("MainWindow", "Rozpocznij generowanie raportu"))
         self.generateButton.setText(_translate("MainWindow", "Generuj raport"))
         self.inputAddress.setStatusTip(_translate("MainWindow", "Wprowadź adres witryny internetowej, aby uzyskać informacje"))

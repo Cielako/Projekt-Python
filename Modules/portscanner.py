@@ -17,18 +17,14 @@ def portscanner(target):
         except:# jeśli port jest zamknięty wykonuj dalej
             pass
     port_number = 1
-    for p in range(1,33434):
+    for p in range(1,1024):
         t = threading.Thread(target = portscan, kwargs = {"port" : port_number})# (target - wywoływalny obiekt za pomocą metody run(), kwargs - słownik argumentów do wywołania celu)
         port_number += 1
         t.start() # rozpoczyna działanie wątku
-        
-    #if len(open_ports) == 0: # Jeśli żaden port nie jest otwarty zwróć komunikat
-        #return "Brak otwartych portów :("
-    #else:
     return open_ports
     
 # Przykładowy test skanera portów
-#a = portscanner("wp.pl")
-#print(a)
+#for x in portscanner("localhost"):
+    #print(x)
 
     

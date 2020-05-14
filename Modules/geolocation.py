@@ -6,7 +6,7 @@ def geolocation(target):
         if location is None:
             return "Nie udało się znaleźć lokalizacji" # jesli nie uda się znaleźć lokalizacji  
         else:
-            geo_info = {"kod kontynentu":"","nazwa kontynentu":"","kod kraju":"","nazwa kraju":"","kod regionu":"","nazwa regionu":"","miasto":"","kod pocztowy":"","szerokość geograficzna":"","długość geograficzna":""}
+            geo_info = {"Kod kontynentu":"","Nazwa kontynentu":"","Kod kraju":"","Nazwa kraju":"","Kod regionu":"","Nazwa regionu":"","Miasto":"","Kod pocztowy":"","Szerokość geograficzna":"","Długość geograficzna":""}
             del location['location'],location['ip'],location['type']
             for key,value in zip(geo_info.keys(),location.values()):
                geo_info[key] = value
@@ -15,5 +15,5 @@ def geolocation(target):
         print(e)
         
 # Przykładowy test
-# for x,y in zip(geolocation("wp.pl").keys(),geolocation("wp.pl").values()):
-    # print(f"{x} : {y}")
+#for x,y in zip(geolocation("wp.pl").keys(),geolocation("wp.pl").values()):
+    #print(f"{x} : {y}")

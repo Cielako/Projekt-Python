@@ -1,8 +1,8 @@
 from iplookup import iplookup
 
-def iplook(adres):
+def iplook(target):
     ip = iplookup.iplookup
-    return ip(adres)
+    return ip(target)
  
 # Przykładowy test modułu 
 #for r in range(len(iplook("yahoo.com"))):
