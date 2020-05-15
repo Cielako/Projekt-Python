@@ -4,6 +4,7 @@
 import threading
 import socket # interfejs sieciowy niskiego poziomu
 
+
 def portscanner(target):
     open_ports = {}
     def portscan(port):    
@@ -17,11 +18,12 @@ def portscanner(target):
         except:# jeśli port jest zamknięty wykonuj dalej
             pass
     port_number = 1
-    for p in range(1,1024):
+    for p in range(1,1024):# Mógłbym zwięszkyć zakres portów np 30000, aczkolwiek aplikacja staje się wtedy trochę niestabilna
         t = threading.Thread(target = portscan, kwargs = {"port" : port_number})# (target - wywoływalny obiekt za pomocą metody run(), kwargs - słownik argumentów do wywołania celu)
         port_number += 1
         t.start() # rozpoczyna działanie wątku
     return open_ports
+
     
 # Przykładowy test skanera portów
 #for x in portscanner("localhost"):

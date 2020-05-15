@@ -1,4 +1,5 @@
 from ipstack import GeoLookup
+
 def geolocation(target):
     try: 
         geo_lookup = GeoLookup("8b1261f4d109cc1673a33da38adf9d28") # Klucz do api
@@ -12,7 +13,7 @@ def geolocation(target):
                geo_info[key] = value
             return(geo_info)
     except Exception as e:
-        print(e)
+        return e
         
 # Przykładowy test
 #for x,y in zip(geolocation("wp.pl").keys(),geolocation("wp.pl").values()):

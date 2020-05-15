@@ -5,6 +5,7 @@ from Modules.portscanner import portscanner
 from Modules.geolocation import geolocation
 from Modules.domain_info import domain_info
 import os
+import re
 
 def pdfcreate(target):
     if os.path.exists("temp.pdf"):
@@ -46,6 +47,6 @@ def pdfcreate(target):
     pdf.set_font("DejaVu", size=12)
     for x,y in zip(domain_info(target).keys(),domain_info(target).values()):# Moduł domain_info
         pdf.cell(200,10, txt=str(f"{x} : {y}"),ln=2,align="C")
-        
     pdf.output("temp.pdf")
+    
     pdf.close()

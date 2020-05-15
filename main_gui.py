@@ -1,6 +1,8 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from Gui.info import Ui_Info
 from pdfcreate import pdfcreate
+import threading
+
 #Główny kod uruchamiający cały program 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -27,8 +29,7 @@ class Ui_MainWindow(object):
         self.progressBar.setGeometry(QtCore.QRect(217, 230, 291, 23))
         self.progressBar.setProperty("value", 24)
         self.progressBar.setObjectName("progressBar")
-        self.progressBar.hide()
-        
+        self.progressBar.close()
         
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
@@ -56,7 +57,6 @@ class Ui_MainWindow(object):
         self.menubar.addAction(self.menuProgram.menuAction())
         self.retranslateUi(MainWindow)
         
-       
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
         
     def displayAbout(self):# Informacje o programie
@@ -73,14 +73,16 @@ class Ui_MainWindow(object):
         #self.labelAddress.setText(inputValue)
         self.completed = 0
         self.progressBar.show()
-        
         self.generateButton.setEnabled(False)
+        pdfcreate(inputValue)
         while self.completed < 100:
-            self.completed += 0.00001
+            self.completed += 0.0001
             self.progressBar.setValue(self.completed)
         self.generateButton.setEnabled(True)
         self.progressBar.close()
-        pdfcreate(inputValue)
+        #self.generateButton.clicked.connect(self.run)
+
+        
         
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -93,8 +95,6 @@ class Ui_MainWindow(object):
         self.actionInformacje.setText(_translate("MainWindow", "Informacje"))
         self.actionZamknij.setText(_translate("MainWindow", "Zamknij"))
         
-
-
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
