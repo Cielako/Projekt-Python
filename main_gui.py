@@ -1,8 +1,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from Gui.info import Ui_Info
 from pdfcreate import pdfcreate
-import threading
-
 #Główny kod uruchamiający cały program 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):

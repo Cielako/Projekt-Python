@@ -4,7 +4,6 @@
 import threading
 import socket # interfejs sieciowy niskiego poziomu
 
-
 def portscanner(target):
     open_ports = {}
     def portscan(port):    

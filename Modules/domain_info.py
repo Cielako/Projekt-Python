@@ -1,7 +1,6 @@
 import whois
 import re
 
-
 def domain_info(target):
     domain_info = {"Nazwa domeny":"","Rejestrator":"","Serwer whois":"","Referencyjny adres url":"","Data aktualizacji":"","Data utworzenia":"","Data wygaśnięcia":"", "Nazwy serwerów": "","e-maile":""}
     w = whois.whois(target)
