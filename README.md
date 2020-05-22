@@ -26,16 +26,16 @@ Zbieranie informacji takich jak:
 - [x] Tester osiąglaności witryny + Czas trwania łączenia się z witryną
 - [x] Trasa adresów pomiędzy hostem a witryną 
 - [x] Tester portów
-- [x] Site info mailer (Test) (?) 
+- [x] Site info mailer (Test) (?) - nie uwzględniony w prototypie 
 - [x] Geolokalizacja adresu witryny
 - [x] Whois (informacje teleadresowe o domenie) (Test)
-- [x] Generowanie raportu o witrynie(za pomocą biblioteki fpdf, plik tymczasowy)(Test) 
-- [ ] Dodatkowe opcje(podgląd raportu z poziomu aplikacji (?) + zapis)
+- [x] Generowanie raportu o witrynie(za pomocą biblioteki fpdf, plik tymczasowy)
+- [x] Dodatkowe opcje(podgląd raportu z poziomu aplikacji + zapis)
   
   ### Główne:
 - [x] Nazwa aplikacji
 - [x] Założenia dotyczące działania aplikacji
-- [ ] Utworzenie wszystkich modułów aplikacji
+- [x] Utworzenie wszystkich modułów aplikacji
 - [x] Pomysł na wygląd GUI
 - [x] Utworzenie Szablonu GUI
 - [x] Implementacja GUI w aplikacji (Częściowo działający)(Test)
