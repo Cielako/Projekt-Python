@@ -1,12 +1,16 @@
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5 import (QtCore, QtGui, QtWidgets)
 from Gui.info import Ui_Info
+from Gui.finished import Ui_Finished_Form
 from pdfcreate import pdfcreate
+from PyQt5.QtWidgets import QFileDialog
+
 #Główny kod uruchamiający cały program 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(686, 382)
-        MainWindow.setMaximumSize(QtCore.QSize(686, 16777215))
+        MainWindow.setMaximumSize(QtCore.QSize(686,382))
+        MainWindow.setMinimumSize(QtCore.QSize(686,382))
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         
@@ -57,7 +61,7 @@ class Ui_MainWindow(object):
         
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
         
-    def displayAbout(self):# Informacje o programie
+    def displayAbout(self):# Okno Informacje o programie
         Info = QtWidgets.QDialog()
         MainWindow.hide()
         ui = Ui_Info()
@@ -65,7 +69,17 @@ class Ui_MainWindow(object):
         Info.show()
         Info.exec_()
         MainWindow.show()
-          
+
+    def finishedReport(self):# Komunikat o zakończeniu generowania raportu
+        Finish = QtWidgets.QDialog()
+        MainWindow.hide()
+        ui = Ui_Finished_Form()
+        ui.setupUi(Finish)
+        Finish.show()
+        Finish.exec_()
+        MainWindow.show()
+        return Finish
+                 
     def run(self):# Uruchom główne funkcje programu
         inputValue = self.inputAddress.text() # pobieranie wartości z input address
         #self.labelAddress.setText(inputValue)
@@ -77,17 +91,16 @@ class Ui_MainWindow(object):
             self.completed += 0.0001
             self.progressBar.setValue(self.completed)
         self.generateButton.setEnabled(True)
+        self.finishedReport()
         self.progressBar.close()
-        #self.generateButton.clicked.connect(self.run)
+        #self.generateButton.clicked.connect(self.finishedReport)
 
-        
-        
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "IPSI"))
-        self.generateButton.setStatusTip(_translate("MainWindow", "Rozpocznij generowanie raportu"))
+        self.generateButton.setToolTip(_translate("MainWindow", "Rozpocznij generowanie raportu"))
         self.generateButton.setText(_translate("MainWindow", "Generuj raport"))
-        self.inputAddress.setStatusTip(_translate("MainWindow", "Wprowadź adres witryny internetowej, aby uzyskać informacje"))
+        self.inputAddress.setToolTip(_translate("MainWindow", "Wprowadź adres witryny internetowej, aby uzyskać informacje"))
         self.labelAddress.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt; font-weight:600; font-family:Comic Sans Ms; font-style:italic;\">Wprowadź adres witryny internetowej</span></p></body></html>"))
         self.menuProgram.setTitle(_translate("MainWindow", "Program"))
         self.actionInformacje.setText(_translate("MainWindow", "Informacje"))
