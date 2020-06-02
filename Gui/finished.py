@@ -10,23 +10,44 @@ class Ui_Finished_Form(object):
         Finished_Form.resize(640, 308)
         Finished_Form.setMaximumSize(QtCore.QSize(686,308))
         Finished_Form.setMinimumSize(QtCore.QSize(686,308))
-        
+        finish_icon = QtGui.QIcon("Gui/icons/finished.png")
+        Finished_Form.setWindowIcon(finish_icon)
+        Finished_Form.setStyleSheet("background-image: url(Gui/icons/transparent.png)")
+      
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(Finished_Form)
         self.verticalLayout_2.setObjectName("verticalLayout_2")
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
         
-        self.label = QtWidgets.QLabel(Finished_Form)
-        self.label.setObjectName("label")
-        self.verticalLayout_2.addWidget(self.label)
+        self.finishedLabel = QtWidgets.QLabel(Finished_Form)
+        self.finishedLabel.setObjectName("finishedLabel")
+        self.verticalLayout_2.addWidget(self.finishedLabel)
         
         self.viewButton = QtWidgets.QPushButton(Finished_Form)
         self.viewButton.setObjectName("viewButton")
+        self.viewButton.setStyleSheet("QPushButton {\n"
+        "color: black;\n"
+        "border: 2px solid black;\n"
+        "border-radius: 11px;\n"
+        "padding: 5px;\n"
+        "background: qradialgradient(cx: 0.3, cy: -0.4,fx: 0.3, fy: -0.4, radius: 1.35, stop: 0 #fff, stop: 1 #888);\n"
+        " }"
+        "QPushButton:hover {"
+            "background: qradialgradient(cx: 0.3, cy: -0.4,fx: 0.3, fy: -0.4,radius: 1.35, stop: 0 #fff, stop: 1 #bbb);}")
         self.viewButton.clicked.connect(self.viewReport)
         self.horizontalLayout_2.addWidget(self.viewButton)
         
         self.saveButton = QtWidgets.QPushButton(Finished_Form)
         self.saveButton.setObjectName("saveButton")
+        self.saveButton.setStyleSheet("QPushButton {\n"
+        "color: black;\n"
+        "border: 2px solid black;\n"
+        "border-radius: 11px;\n"
+        "padding: 5px;\n"
+        "background: qradialgradient(cx: 0.3, cy: -0.4,fx: 0.3, fy: -0.4, radius: 1.35, stop: 0 #fff, stop: 1 #888);\n"
+        " }"
+        "QPushButton:hover {"
+            "background: qradialgradient(cx: 0.3, cy: -0.4,fx: 0.3, fy: -0.4,radius: 1.35, stop: 0 #fff, stop: 1 #bbb);}")
         self.saveButton.clicked.connect(self.saveReport)
         self.horizontalLayout_2.addWidget(self.saveButton)
         self.verticalLayout_2.addLayout(self.horizontalLayout_2)
@@ -49,7 +70,7 @@ class Ui_Finished_Form(object):
         _translate = QtCore.QCoreApplication.translate
         Finished_Form.setWindowTitle(_translate("Form", "Zakończono"))
         Finished_Form.setStatusTip(_translate("Form", "Zapisz wygenerowany raport"))
-        self.label.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt; font-weight:600;\">Twój raport został wygenerowany </span></p></body></html>"))
+        self.finishedLabel.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt; font-weight:600;\">Twój raport został wygenerowany </span></p></body></html>"))
         self.viewButton.setToolTip(_translate("Form", "Obejrzyj raport"))
         self.viewButton.setText(_translate("Form", "Podejrzyj raport"))
         self.saveButton.setToolTip(_translate("Form", "Zapisz swój raport"))

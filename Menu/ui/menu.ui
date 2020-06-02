@@ -19,6 +19,9 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: red;</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="generateButton">
     <property name="geometry">
@@ -31,6 +34,15 @@
     </property>
     <property name="statusTip">
      <string>Rozpocznij generowanie raportu</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 5px;
+background: qradialgradient(cx: 0.3, cy: -0.4,fx: 0.3, fy: -0.4, radius: 1.35, stop: 0 #fff, stop: 1 #888);
+ }</string>
     </property>
     <property name="text">
      <string>Generuj raport</string>
@@ -52,11 +64,14 @@
    <widget class="QLabel" name="labelAddress">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>100</y>
+      <x>90</x>
+      <y>60</y>
       <width>481</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: blue</string>
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; font-style:italic;&quot;&gt;Wprowadź adres witryny internetowej&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>

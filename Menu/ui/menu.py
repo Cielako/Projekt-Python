@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'menuv2.ui'
+# Form implementation generated from reading ui file 'menu.ui'
 #
 # Created by: PyQt5 UI code generator 5.13.0
 #
@@ -19,6 +19,13 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName("centralwidget")
         self.generateButton = QtWidgets.QPushButton(self.centralwidget)
         self.generateButton.setGeometry(QtCore.QRect(290, 180, 101, 31))
+        self.generateButton.setStyleSheet("QPushButton {\n"
+"color: #333;\n"
+"border: 2px solid #555;\n"
+"border-radius: 11px;\n"
+"padding: 5px;\n"
+"background: qradialgradient(cx: 0.3, cy: -0.4,fx: 0.3, fy: -0.4, radius: 1.35, stop: 0 #fff, stop: 1 #888);\n"
+" }")
         self.generateButton.setObjectName("generateButton")
         self.inputAddress = QtWidgets.QLineEdit(self.centralwidget)
         self.inputAddress.setGeometry(QtCore.QRect(220, 150, 251, 20))
@@ -58,7 +65,7 @@ class Ui_MainWindow(object):
         self.generateButton.setStatusTip(_translate("MainWindow", "Rozpocznij generowanie raportu"))
         self.generateButton.setText(_translate("MainWindow", "Generuj raport"))
         self.inputAddress.setStatusTip(_translate("MainWindow", "Wprowadź adres witryny internetowej, aby uzyskać informacje"))
-        self.labelAddress.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt; font-weight:600; font-family:Comic Sans Ms; font-style:italic;\">Wprowadź adres witryny internetowej</span></p></body></html>"))
+        self.labelAddress.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt; font-weight:600; font-style:italic;\">Wprowadź adres witryny internetowej</span></p></body></html>"))
         self.menuProgram.setTitle(_translate("MainWindow", "Program"))
         self.actionInformacje.setText(_translate("MainWindow", "Informacje"))
         self.actionZamknij.setText(_translate("MainWindow", "Zamknij"))
