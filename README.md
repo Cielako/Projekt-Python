@@ -39,7 +39,7 @@ Zbieranie informacji takich jak:
 - [x] Pomysł na wygląd GUI
 - [x] Utworzenie Szablonu GUI
 - [x] Implementacja GUI w aplikacji (Częściowo działający)(Test)
-- [ ] Utworzenie kompletnego GUI
+- [x] Utworzenie kompletnego GUI
   
   ### Poboczne:
 - [ ] Lokalizacja i korekta błędów w aplikacji
@@ -50,7 +50,7 @@ Zbieranie informacji takich jak:
  - [x] Raport I (03.04.20)
  - [x] Raport II (24.04.20)
  - [x] Raport III (15.05.20)
- - [ ] Raport IV/Prototyp (29.05.20)
+ - [x] Raport IV/Prototyp (29.05.20)
  - [ ] Prezentacje/oddanie projektu (19.06.20)
 
 
