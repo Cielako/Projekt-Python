@@ -1,8 +1,12 @@
 from PyQt5 import (QtCore, QtGui, QtWidgets)
 from Gui.info import Ui_Info
 from Gui.finished import Ui_Finished_Form
+from Gui.komunikat import Ui_Blad
+from Modules.is_online import is_online
 from pdfcreate import pdfcreate
 from PyQt5.QtWidgets import QFileDialog
+
+import urllib.request
 
 #Główny kod uruchamiający cały program 
 class Ui_MainWindow(object):
@@ -94,20 +98,41 @@ class Ui_MainWindow(object):
         Finish.exec_()
         MainWindow.show()
         return Finish
-                 
+    
+    def komunikatBlad(self):
+        Komunikat = QtWidgets.QDialog()
+        MainWindow.hide()
+        ui = Ui_Blad()
+        ui.setupUi(Komunikat)
+        Komunikat.show()
+        Komunikat.exec_()
+        MainWindow.show()
+        return Komunikat
+                    
     def run(self):# Uruchom główne funkcje programu
         inputValue = self.inputAddress.text() # pobieranie wartości z input address
         #self.labelAddress.setText(inputValue)
-        self.completed = 0
-        self.progressBar.show()
-        self.generateButton.setEnabled(False)
-        pdfcreate(inputValue)
-        while self.completed < 100:
-            self.completed += 0.0001
-            self.progressBar.setValue(self.completed)
-        self.generateButton.setEnabled(True)
-        self.finishedReport()
-        self.progressBar.close()
+        if inputValue is not "":
+            try:
+                urllib.request.urlopen("http://" + inputValue)
+            except:
+                MainWindow.close()
+                self.komunikatBlad()
+                MainWindow.show()
+            else:
+                inputValue = self.inputAddress.text()
+                self.completed = 0
+                self.progressBar.show()
+                self.generateButton.setEnabled(False)
+                pdfcreate(inputValue)
+                while self.completed < 100:
+                    self.completed += 0.0001
+                    self.progressBar.setValue(self.completed)
+                self.generateButton.setEnabled(True)
+                self.finishedReport()
+                self.progressBar.close()
+        else:
+            self.komunikatBlad()
         #self.generateButton.clicked.connect(self.finishedReport)
 
     def retranslateUi(self, MainWindow):
