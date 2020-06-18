@@ -42,8 +42,8 @@ Zbieranie informacji takich jak:
 - [x] Utworzenie kompletnego GUI
   
   ### Poboczne:
-- [ ] Lokalizacja i korekta błędów w aplikacji
-- [ ] Poprawa GUI 
+- [x] Lokalizacja i korekta błędów w aplikacji
+- [x] Poprawa GUI 
 
   ### Raporty:
  - [x] Propozycja projektu (13.03.20)
@@ -51,7 +51,7 @@ Zbieranie informacji takich jak:
  - [x] Raport II (24.04.20)
  - [x] Raport III (15.05.20)
  - [x] Raport IV/Prototyp (29.05.20)
- - [ ] Prezentacje/oddanie projektu (19.06.20)
+ - [x] Prezentacje/oddanie projektu (19.06.20)
 
 
 

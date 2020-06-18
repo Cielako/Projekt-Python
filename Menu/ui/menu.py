@@ -1,14 +1,4 @@
-# -*- coding: utf-8 -*-
-
-# Form implementation generated from reading ui file 'menu.ui'
-#
-# Created by: PyQt5 UI code generator 5.13.0
-#
-# WARNING! All changes made in this file will be lost!
-
-
 from PyQt5 import QtCore, QtGui, QtWidgets
-
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -19,38 +9,40 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName("centralwidget")
         self.generateButton = QtWidgets.QPushButton(self.centralwidget)
         self.generateButton.setGeometry(QtCore.QRect(290, 180, 101, 31))
-        self.generateButton.setStyleSheet("QPushButton {\n"
-"color: #333;\n"
-"border: 2px solid #555;\n"
-"border-radius: 11px;\n"
-"padding: 5px;\n"
-"background: qradialgradient(cx: 0.3, cy: -0.4,fx: 0.3, fy: -0.4, radius: 1.35, stop: 0 #fff, stop: 1 #888);\n"
-" }")
         self.generateButton.setObjectName("generateButton")
+        
         self.inputAddress = QtWidgets.QLineEdit(self.centralwidget)
         self.inputAddress.setGeometry(QtCore.QRect(220, 150, 251, 20))
         self.inputAddress.setObjectName("inputAddress")
+        
         self.labelAddress = QtWidgets.QLabel(self.centralwidget)
         self.labelAddress.setGeometry(QtCore.QRect(120, 100, 481, 41))
         self.labelAddress.setObjectName("labelAddress")
+        
         self.progressBar = QtWidgets.QProgressBar(self.centralwidget)
         self.progressBar.setGeometry(QtCore.QRect(217, 230, 291, 23))
         self.progressBar.setProperty("value", 24)
         self.progressBar.setObjectName("progressBar")
+        
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 686, 21))
         self.menubar.setObjectName("menubar")
+        
         self.menuProgram = QtWidgets.QMenu(self.menubar)
         self.menuProgram.setObjectName("menuProgram")
         MainWindow.setMenuBar(self.menubar)
+        
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
+        
         self.actionInformacje = QtWidgets.QAction(MainWindow)
         self.actionInformacje.setObjectName("actionInformacje")
+        
         self.actionZamknij = QtWidgets.QAction(MainWindow)
         self.actionZamknij.setObjectName("actionZamknij")
+        
         self.menuProgram.addAction(self.actionInformacje)
         self.menuProgram.addAction(self.actionZamknij)
         self.menubar.addAction(self.menuProgram.menuAction())

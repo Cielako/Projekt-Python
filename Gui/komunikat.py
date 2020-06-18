@@ -7,6 +7,8 @@ class Ui_Blad(object):
         Blad.resize(320, 120)
         Blad.setMinimumSize(QtCore.QSize(320, 120))
         Blad.setMaximumSize(QtCore.QSize(320, 120))
+        blad_icon = QtGui.QIcon("Gui/icons/warning.png")
+        Blad.setWindowIcon(blad_icon)
         #self.pushButton = QtWidgets.QPushButton(Blad)
         #self.pushButton.setGeometry(QtCore.QRect(120, 60, 75, 25))
         #self.pushButton.setObjectName("pushButton")

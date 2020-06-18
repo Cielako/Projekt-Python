@@ -21,6 +21,7 @@ class Ui_Finished_Form(object):
         
         self.finishedLabel = QtWidgets.QLabel(Finished_Form)
         self.finishedLabel.setObjectName("finishedLabel")
+        self.finishedLabel.setStyleSheet("background-image: url(Gui/icons/transparent1.png); background: qradialgradient(cx: 0.2, cy: -0.8,fx: 0.1, fy: -0.3, radius: 1.35, stop: 0 #fff, stop: 1 #eee); border-radius: 10px;")
         self.verticalLayout_2.addWidget(self.finishedLabel)
         
         self.viewButton = QtWidgets.QPushButton(Finished_Form)

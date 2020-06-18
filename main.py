@@ -4,8 +4,6 @@ from Gui.finished import Ui_Finished_Form
 from Gui.komunikat import Ui_Blad
 from Modules.is_online import is_online
 from pdfcreate import pdfcreate
-from PyQt5.QtWidgets import QFileDialog
-
 import urllib.request
 
 #Główny kod uruchamiający cały program 
